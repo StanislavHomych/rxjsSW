@@ -42,9 +42,7 @@ useEffect(()=>{
 }, [timerOn])
 
 
- {
-   /*double click on 'Wait' button*/
- }
+
 
 
   return (
