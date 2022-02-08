@@ -42,9 +42,6 @@ useEffect(()=>{
 }, [timerOn])
 
 
-
-
-
   return (
     <div className="App">
             <span>{("0" + Math.floor((timeStart / 60000) % 60))}:</span>
@@ -61,7 +58,7 @@ useEffect(()=>{
         )}
         <button className="button">Wait</button>
         <button onClick={()=>setTime(0)}>Reset</button>
-        <h4></h4>
+      
 
       </div>
     </div>
