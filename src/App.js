@@ -42,6 +42,16 @@ useEffect(()=>{
 }, [timerOn])
 
 
+{
+  // Set time to 0 for "Stop" button
+}
+
+function stopZero(){
+  setTimeOn(false);
+  setTime(0);
+}
+
+
   return (
     <div className="App">
             <span>{("0" + Math.floor((timeStart / 60000) % 60))}:</span>
@@ -53,7 +63,7 @@ useEffect(()=>{
 
         )}
          {timerOn && (
-           <button onClick={()=>setTimeOn(false)}>Stop</button>
+           <button onClick={()=>stopZero()}>Stop</button>
 
         )}
         <button className="button">Wait</button>
